@@ -4,7 +4,7 @@ export const metadata = {
     title: "Dead Cells",
     description: "Projeto pra mostrar tudo que eu sei",
     icons: {
-        icon: "/icons/deadcells.png",
+        icon: "/icons/icon-dead-cells.jpg",
     },
 };
 
