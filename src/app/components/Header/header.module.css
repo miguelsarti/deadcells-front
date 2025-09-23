@@ -3,11 +3,12 @@
   width: 100vw;
   max-width: 100%;
   margin: 0 auto;
-  background: linear-gradient(0deg, #a000c094 0%, #0c0041  180%);
+  background: linear-gradient(0deg, #c800f0e8 20%, #0c0041  180%);
   padding: 2.1rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1.4rem;
 }
 
 @media (max-width: 900px) {
@@ -37,7 +38,7 @@
 }
 
 .navLink {
-  color: #ff0303;
+  color: #ff2424;
   font-size: 1.15rem;
   font-weight: 500;
   text-decoration: none;
