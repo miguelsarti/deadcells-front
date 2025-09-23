@@ -12,16 +12,84 @@
     font-size: 2rem;
     font-weight: bold;
     color: #ffffff;
+    margin: auto;
+    text-align: center;
     margin-top: 2rem;
 }
 
 .content {
-    width: 60%;
+    background-color: #e700a228;
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    min-height: 18rem;
+    width: 100vw;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    
+    margin-top: 3rem
+}
+
+@media (max-width: 700px) {
+    .content {
+        flex-direction: column;
+        padding: 1.2rem 0.5rem;
+        min-height: unset;
+        width: 98vw;
+        max-width: 99vw;
+        gap: 1rem;
+    }
+}
+
+
+.imageProfile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;;
+}
+
+.image {
+    border-radius: 100rem;
+    width: 200px;  
+    height: 200px;
+    box-shadow: 0 12px px rgba(0,0,0,0.25), 0 1.5px 6px rgba(0,0,0,0.12);
+    
+}
+
+.textContent {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    max-width: 100vw;
-    margin-top: 2rem;
-    background-color: #13326b;
+    align-items: flex;
+    text-align: left;
+    flex: 1;
+    gap: 1rem;
+}
+
+.title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: #ffffff;
+}
+
+.motivacional {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #c0c0c0;
+    margin-top: 1rem;
 }
