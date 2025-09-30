@@ -24,14 +24,14 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     min-height: 18rem;
     width: 100vw;
-    max-width: 800px;
+    max-width: 900px;
     display: flex;
     align-items: center;
     margin: auto;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
-    
+    border: 1.4px solid #ffffff;
     margin-top: 3rem
 }
 
@@ -51,15 +51,15 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 100%;;
+    height: 100%;
 }
 
 .image {
-    border-radius: 100rem;
-    width: 200px;  
-    height: 200px;
+    border-radius: 1rem;
+    width: 250px;  
+    height: 250px;
     box-shadow: 0 12px px rgba(0,0,0,0.25), 0 1.5px 6px rgba(0,0,0,0.12);
-    
+    border: 1.2px solid #fff;
 }
 
 .textContent {
@@ -69,22 +69,53 @@
     align-items: flex;
     text-align: left;
     flex: 1;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .title {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    margin-bottom: 1rem;
-    color: #000000;
+    color: #ff0000;
     text-align: center;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 .description {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     line-height: 1.75rem;
     color: #ffffff;
+    margin: 1rem
+}
+
+.perfilCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card {
+    width: 10vw;
+    text-align: center;
+    border: 2px solid rgb(120, 34, 201);
+    height: 12.5vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 8px;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
 }
 
 .motivacional {
@@ -92,4 +123,5 @@
     line-height: 1.5rem;
     color: #c0c0c0;
     margin-top: 1rem;
+    text-align: center;
 }

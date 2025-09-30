@@ -10,20 +10,8 @@ export default function Footer() {
           <h1 className={styles.footerTitle}>
             Dead Cells
           </h1>
-          <p className={styles.footerDescription}>
-            Um jogo de ação no estilo roguelike e metroidvania, desenvolvido pela Motion Twin.
-          </p>
-          <div className={styles.footerLinks}>
-            <Link href="/sobre" className={styles.footerLink}>
-              Sobre
-            </Link>
-            <Link href="/deadcells" className={styles.footerLink}>
-              Dead Cells
-            </Link>
-            <Link href="/contato" className={styles.footerLink}>
-              Contato
-            </Link>
-          </div>
+          <p className={styles.footerDescription}>Um jogo de ação no estilo roguelike e metroidvania, desenvolvido pela Motion Twin.</p>
+          <h1 className={styles.footerCopyright}>© 2025 Dead Cells</h1>
         </div>
       </div>
     </footer>
