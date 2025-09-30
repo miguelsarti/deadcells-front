@@ -37,6 +37,9 @@ export default function Home() {
           alt="Final Boss"
           width={600}
           />
+          <p className={styles.finaltext}>
+            Pronto para ter uma experiência única com esse jogo? Aproveite para se tornar um jogador experiente e desfrute do máximo possível. Divirta-se!
+          </p>
       </div>
       <Footer />
     </div>
