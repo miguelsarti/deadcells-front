@@ -32,7 +32,9 @@ export default function DeadCells() {
             </Link>
           </div>
           <div className={styles.link}>
+            <div className={styles.imageIconDiv}>
             <img src="./img/mutations.png" alt="mutacoes" width={80} height={80} className={styles.imageIcon}/>
+            </div>
             <Link href="/deadcells/mutacoes">
               <p className={styles.linkTitle}>Mutações</p>
             </Link>

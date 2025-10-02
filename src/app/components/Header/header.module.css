@@ -3,12 +3,13 @@
   width: 100vw;
   max-width: 100%;
   margin: 0 auto;
-  background: linear-gradient(0deg, #c800f0e8 20%, #0c0041  180%);
+  background-color: #313131  ;
   padding: 2.1rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 1.4rem;
+  border-bottom:  2px solid #c90707;
 }
 
 @media (max-width: 900px) {
