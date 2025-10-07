@@ -42,13 +42,29 @@
     border-radius: 8px;
     color: white;
     font-weight: bold;
-    justify-content: space-between;
+    position: relative;
     overflow: hidden;
+    padding-left: 80px; 
+    justify-content: center; 
+    text-decoration: none; 
+    cursor: pointer;    
+    transition: all 0.3s ease; 
+}
+
+.link:hover {
+    transform: scale(1.02); 
+    border-color: #ff0000; 
+    background: linear-gradient(0deg, #1a4086 10%, #c011e6c4 80%); 
 }
 
 .imageIcon {
     width: 80px;
     height: 80px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-left: 0.4rem;
+    transform: translateY(-50%);
 }
 
 .linkTitle {
@@ -56,6 +72,10 @@
     line-height: 1.5rem;
     color: #fff;
     text-align: center;
+    margin: 0 auto;
+    flex: 1;
     display: flex;
-    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5rem;
 }

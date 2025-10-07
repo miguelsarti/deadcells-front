@@ -19,26 +19,20 @@ export default function DeadCells() {
         <h1 className={styles.title}>Consulte sobre o jogo aqui!</h1>
         <p className={styles.description}>Por aqui você pode descobrir diversas coisas sobre o jogo, como armas, inimigos, npcs, e mutações, além de outras informações importantes sobre cada um. Explicado detalhadamente para o jogador compreender e se familiarizar com o jogo. Acesse abaixo:</p>
         <div className={styles.links}>
-          <div className={styles.link}>
+          <Link href="/deadcells/armas" className={styles.link}>
             <img src="./img/gears.png" alt="armas" width={80} height={80} className={styles.imageIcon}/>
-            <Link href="/deadcells/armas">
-              <p className={styles.linkTitle}>Armas</p>
-            </Link>
-          </div>
-            <div className={styles.link}>
-                <img src="./img/personagens.png" alt="personagens" width={80} height={80} className={styles.imageIcon}/>
-            <Link href="/deadcells/personagens">
-              <p className={styles.linkTitle}>Personagens</p>
-            </Link>
-          </div>
-          <div className={styles.link}>
-            <div className={styles.imageIconDiv}>
+            <p className={styles.linkTitle}>Armas</p>
+          </Link>
+          
+          <Link href="/deadcells/personagens" className={styles.link}>
+            <img src="./img/personagens.png" alt="personagens" width={80} height={80} className={styles.imageIcon}/>
+            <p className={styles.linkTitle}>Personagens</p>
+          </Link>
+          
+          <Link href="/deadcells/mutacoes" className={styles.link}>
             <img src="./img/mutations.png" alt="mutacoes" width={80} height={80} className={styles.imageIcon}/>
-            </div>
-            <Link href="/deadcells/mutacoes">
-              <p className={styles.linkTitle}>Mutações</p>
-            </Link>
-        </div>
+            <p className={styles.linkTitle}>Mutações</p>
+          </Link>
       </div>
     </div>
       < Footer />
