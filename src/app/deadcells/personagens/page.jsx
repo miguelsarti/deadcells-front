@@ -76,11 +76,11 @@ export default function Personagens() {
                         <h2 className={styles.characterName}>NPCs</h2>
                         <div className={styles.characterGrid}>
                             {npcs.map((npc) => (
-                                <Link key={npc.id} href={`/deadcells/npcs/${npc.id}`}>
+                                <Link key={npc.id} href={`/deadcells/personagens/npc/${npc.id}`}>
                                 <div key={npc.id} className={styles.characterCard}>
                                     <img 
                                         src={npc.imageUrl} 
-                                        alt={npc.nome}
+                                        alt="NPC"
                                         className={styles.characterImage}
                                     />
                                     <h3 className={styles.characterName}>{npc.name}</h3>
@@ -96,7 +96,7 @@ export default function Personagens() {
                         <h2 className={styles.characterName}>Inimigos</h2>
                         <div className={styles.characterGrid}>
                             {inimigos.map((inimigo) => (
-                                <Link key={inimigo.id} href={`/deadcells/inimigos/${inimigo.id}`}>
+                                <Link key={inimigo.id} href={`/deadcells/personagens/inimigo/${inimigo.id}`}>
                                 <div key={inimigo.id} className={styles.characterCard}>
                                     <img 
                                         src={inimigo.imageUrl} 

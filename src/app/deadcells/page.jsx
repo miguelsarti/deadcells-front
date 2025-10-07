@@ -1,8 +1,6 @@
 "use client"
 
 import React from 'react'
-import { useState } from 'react'
-// import axios from 'axios' 
 import styles from './deadcells.module.css'
 import Header from '../components/Header/page'
 import Footer from '../components/Footer/page'
