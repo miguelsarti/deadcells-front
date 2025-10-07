@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    min-width: 99.2vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, #13326b 10%, #ab00cec4 80%);
+    bottom: 3rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin-top: 2rem;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 1rem;
+    max-width: 900px;
+    margin-bottom: 3rem;
+}
