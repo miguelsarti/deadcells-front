@@ -39,15 +39,3 @@ export default function DeadCells() {
     </div>
   )
 }
-
-/* Ideia do modelo de consulta:
-Personagens: Abrir uma página que possuem NPCs e Inimigos 
-com o icone do lado, e assim que apertasse 
-abriria uma lista abaixo com o conteudo do que você clicou. 
-
-Em todos os tipos de consultar abrir um site so com o
- conteudo delas e assim que apertar no certo 
- conteudo mostrar a explicacao com foto e detalhes do back
-
- Importante: pegar fotos da wiki do dead cells
- */

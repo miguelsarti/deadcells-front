@@ -12,7 +12,7 @@ export default function Sobre() {
         alt="Título do jogo Dead Cells"
         width={400}
       />
-
+      <h1 className={styles.title}>Sobre Mim</h1>
       <div className={styles.content}>
         <div className={styles.imageProfile}>
           <img
@@ -22,7 +22,7 @@ export default function Sobre() {
           />
         </div>
         <div className={styles.textContent}>
-          <h1 className={styles.title}>Miguel Sarti</h1>
+          <h1 className={styles.name}>Miguel Sarti</h1>
           <p className={styles.description}>
             Eu me chamo Miguel Sarti, tenho 17 anos, sou estudante do SESI e SENAI e atualmente estou na turma 2TDS2. Estou no meu segundo ano de desenvolvimento web, e estou muito animado para continuar aprendendo e crescendo nessa área. O que eu mais gosto de fazer é jogar videogame, ir pra academia e passear.
           </p>
