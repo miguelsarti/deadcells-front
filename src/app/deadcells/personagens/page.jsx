@@ -12,18 +12,20 @@ export default function Personagens() {
         const [inimigos, setInimigos] = useState([])
         const [npcs, setNPCs] = useState([])
 
-    
-    const apiURL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000'
+        const apiURL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000'
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch(`${apiURL}/personagens`)
+            const response = await fetch(`${apiURL}/npcs`) 
+            const responseData = await fetch(`${apiURL}/inimigos`)
+
             const data = await response.json()
+            const database = await responseData.json()
 
             console.log(data)
             
             setNPCs(data)
-            setInimigos(data)
+            setInimigos(database)
         }
         fetchData()
     }, [])
@@ -77,14 +79,11 @@ export default function Personagens() {
                                 <Link key={npc.id} href={`/deadcells/npcs/${npc.id}`}>
                                 <div key={npc.id} className={styles.characterCard}>
                                     <img 
-                                        src={npc.imagem} 
+                                        src={npc.imageUrl} 
                                         alt={npc.nome}
                                         className={styles.characterImage}
                                     />
                                     <h3 className={styles.characterName}>{npc.name}</h3>
-                                    <p className={styles.characterDescription}>{npc.descricao}</p>
-                                    <p className={styles.characterLocation}>{npc.localizacao}</p>
-                                    
                                 </div>
                                 </Link>
                             ))}
@@ -100,14 +99,11 @@ export default function Personagens() {
                                 <Link key={inimigo.id} href={`/deadcells/inimigos/${inimigo.id}`}>
                                 <div key={inimigo.id} className={styles.characterCard}>
                                     <img 
-                                        src={inimigo.imagem} 
-                                        alt={inimigo.nome}              
+                                        src={inimigo.imageUrl} 
+                                        alt={inimigo.nome}
                                         className={styles.characterImage}
                                     />
-                                    <h3 className={styles.characterName}>{inimigo.nome}</h3>
-                                    <p className={styles.characterDescription}>{inimigo.descricao}</p>
-                                    <p className={styles.characterLocation}>{inimigo.localizacao}</p>
-                                    
+                                    <h3 className={styles.characterName}>{inimigo.name}</h3>
                                 </div>
                                 </Link>
                             ))}
