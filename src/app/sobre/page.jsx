@@ -11,6 +11,7 @@ export default function Sobre() {
         src='img/title-deadcells.png'
         alt="Título do jogo Dead Cells"
         width={400}
+        className={styles.titleImage}
       />
       <h1 className={styles.title}>Sobre Mim</h1>
       <div className={styles.content}>

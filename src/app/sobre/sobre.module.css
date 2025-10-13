@@ -5,47 +5,101 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(0deg, #13326b 10%, #ab00cec4 80%);
-    bottom: 3rem;
+}
+
+.titleImage {
+    width: 100%;
+    max-width: min(90%, 400px);
+    height: auto;
+    margin: 1rem auto;
+    display: block;
+    object-fit: contain;
 }
 
 .title {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 5vw, 2rem);
     font-weight: bold;
     color: #ffffff;
-    margin: auto;
     text-align: center;
-    margin-top: 2rem;
+    margin: 2rem 0;
     text-decoration: underline;
 }
 
 .content {
     background-color: #e700a228;
-    border-radius: 1rem;
-    padding: 2.5rem 2rem;
+    border-radius: clamp(0.5rem, 2vw, 1rem);
+    padding: clamp(1.5rem, 4vw, 2.5rem);
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    min-height: 18rem;
-    width: 100vw;
-    max-width: 900px;
+    width: 100%;
+    max-width: 70%;
     display: flex;
     align-items: center;
-    margin: auto;
+    margin: 2rem auto;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
+    gap: clamp(1rem, 3vw, 2rem);
     border: 1.4px solid #ab00cec4;
-    margin-top: 3rem
 }
 
-@media (max-width: 700px) {
+
+@media (max-width: 600px) {
     .content {
-        flex-direction: column;
-        padding: 1.2rem 0.5rem;
-        min-height: unset;
-        width: 98vw;
-        max-width: 99vw;
+        padding: 1.2rem 1rem;
         gap: 1rem;
+        margin: 1rem auto;
     }
 }
+
+.imageProfile {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #ab00cec4;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.textContent {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.cardTitle {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .imageProfile {
+        max-width: 250px;
+    }
+    .card {
+        width: 17vw;
+        height: 12.5vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .perfilCards {
+        flex-direction: column;
+        font-size: 0.8rem;
+    }
+    .cardTitle {
+        display: flex;
+        font-size: 0.8rem;
+    }
+}
+
 
 
 .imageProfile {
@@ -76,7 +130,7 @@
 .name {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #ff0000;
+    color: #fff;
     text-align: center;
     font-weight: bold;
 }
@@ -96,10 +150,10 @@
 }
 
 .card {
-    width: 10vw;
+    width: 50%;
     text-align: center;
     border: 2px solid rgb(120, 34, 201);
-    height: 12.5vh;
+    height: 13vh;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -124,4 +178,11 @@
     color: #c0c0c0;
     margin-top: 1rem;
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    .titleImage {
+        margin: 1rem auto;
+        max-width: 80%;
+    }
 }
