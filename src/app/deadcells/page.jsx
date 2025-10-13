@@ -12,7 +12,7 @@ export default function DeadCells() {
   return (
     <div className={styles.container}>
       <Header />
-      <img src='img/title-deadcells.png' alt="Título do jogo Dead Cells" width={400} height={300} />
+      <img src='img/title-deadcells.png' alt="Título do jogo Dead Cells" width={400} height={300} className={styles.titleImage}/>
       <div className={styles.content}>
         <h1 className={styles.title}>Consulte sobre o jogo aqui!</h1>
         <p className={styles.description}>Por aqui você pode descobrir diversas coisas sobre o jogo, como armas, inimigos, npcs, e mutações, além de outras informações importantes sobre cada um. Explicado detalhadamente para o jogador compreender e se familiarizar com o jogo. Acesse abaixo:</p>
