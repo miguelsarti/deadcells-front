@@ -3,23 +3,23 @@
   width: 100vw;
   max-width: 100%;
   margin: 0 auto;
-  background-color: #313131  ;
+  background-color: #313131;
   padding: 2.2rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
-  border-bottom:  2px solid #c90707;
+  border-bottom: 2px solid #c90707;
 }
 
 @media (max-width: 900px) {
   .headerNav {
-    max-width: 99vw;
+    max-width: 100vw;
     padding: 1rem 0.5rem;
-    border-radius: 0.5rem;
   }
   .navMenu ul {
     gap: 1rem;
+    text-align: center;
   }
 }
 
@@ -29,6 +29,7 @@
   gap: 2rem;
   align-items: center;
 }
+
 
 .navMenu ul {
   display: flex;
@@ -59,13 +60,16 @@
 
 @media (max-width: 600px) {
   .headerNav {
-    padding: 0.5rem 0;
+    padding: 1rem 0;
   }
   .navMenu ul {
     gap: 1rem;
+    justify-content: space-around;
   }
+
   .navLink {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    padding: 0.5rem 0rem;
   }
+  
 }

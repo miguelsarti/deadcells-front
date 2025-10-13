@@ -1,23 +1,25 @@
 .container {
     display: flex;
-    min-width: 99.2vw;
+    min-width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: linear-gradient(0deg, #13326b 10%, #ab00cec4 80%);
-    bottom: 3rem;
+    padding: clamp(1rem, 3vw, 2rem);
+    min-height: 100vh;
 }
 
 .mutationCard {
     background: rgba(19, 50, 107, 0.9);
     border: 2px solid #c90707;
     border-radius: 12px;
-    padding: 2rem;
-    margin: 2rem;
-    max-width: 800px;
-    width: 90%;
+    padding: clamp(1rem, 3vw, 2rem);
+    margin: clamp(1rem, 3vw, 2rem);
+    max-width: min(90%, 800px);
+    width: 100%;
     color: white;
     animation: fadeIn 0.5s ease-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 @keyframes fadeIn {
