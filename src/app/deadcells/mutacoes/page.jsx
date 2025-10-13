@@ -27,7 +27,7 @@ export default function Mutacoes() {
         <div className={styles.container}>
             <Header />
             
-                  <img src='../img/title-deadcells.png' alt="Título do jogo Dead Cells" width={400} height={300} />
+                  <img src='../img/title-deadcells.png' alt="Título do jogo Dead Cells" width={400} height={300} className={styles.titleImage}/>
                   <h1 className={styles.title}>Mutações de Dead Cells</h1>
             <p className={styles.description}>
                 Descubra todas as mutações disponíveis em Dead Cells, suas características e como obtê-las.

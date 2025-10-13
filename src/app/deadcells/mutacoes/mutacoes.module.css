@@ -5,8 +5,6 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(0deg, #13326b 10%, #ab00cec4 80%);
-    padding: clamp(1rem, 3vw, 2rem);
-    min-height: 100vh;
 }
 
 .title {
@@ -122,4 +120,11 @@
     font-size: 0.9rem;
     color: #ccc;
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    .titleImage {
+        margin: 1rem auto;
+        max-width: 80%;
+    }
 }

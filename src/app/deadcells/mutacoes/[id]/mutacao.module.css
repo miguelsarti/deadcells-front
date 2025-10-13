@@ -5,8 +5,6 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(0deg, #13326b 10%, #ab00cec4 80%);
-    padding: clamp(1rem, 3vw, 2rem);
-    min-height: 100vh;
 }
 
 .mutationCard {
@@ -110,4 +108,11 @@
     background: rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     border: 2px solid #c90707;
+}
+
+@media (max-width: 600px) {
+    .titleImage {
+        margin: 1rem auto;
+        max-width: 80%;
+    }
 }
