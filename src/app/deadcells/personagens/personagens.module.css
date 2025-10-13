@@ -5,8 +5,6 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(0deg, #13326b 10%, #ab00cec4 80%);
-    padding: clamp(1rem, 3vw, 2rem);
-    min-height: 100vh;
 }
 
 .title {
@@ -42,7 +40,7 @@
 
 .sectionButton {
     padding: 1rem 2rem;
-    min-width: 250px;
+    min-width: 285px;
     background: linear-gradient(0deg, #13326b 10%, #ab00cec4 80%);
     border: 2px solid #c90707;
     border-radius: 8px;
@@ -142,4 +140,17 @@
     color: #ff6b6b;
     text-align: center;
     font-style: italic;
+}
+
+@media (max-width: 600px)  {
+        .titleImage {
+        margin: 1rem auto;
+        max-width: 80%;
+        }
+}
+
+@media (max-width: 380px) {
+    .characterContent {
+        padding: 0;
+    }
 }

@@ -33,7 +33,7 @@ export default function Personagens() {
     return (
         <div className={styles.container}>
             <Header />
-            <img src='../img/title-deadcells.png' alt="Título do jogo Dead Cells" width={400} height={300} />
+            <img src='../img/title-deadcells.png' alt="Título do jogo Dead Cells" width={400} height={300} className={styles.titleImage}/>
             <h1 className={styles.title}>Personagens de Dead Cells</h1>
             <p className={styles.description}>
                 Conheça os diversos personagens que você encontrará em sua jornada por Dead Cells.
